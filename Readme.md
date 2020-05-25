@@ -1,4 +1,4 @@
-# Tingle Bot 
+This is a bot that does Tingle things. 
 
 ## Dice Roller
 * **^roll \< XdY \>** Roll dice of Y sides X times 
