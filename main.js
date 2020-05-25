@@ -33,7 +33,7 @@ function diceRoller(diceString) {
 
     while (numberOfDice > 0) {
         numberOfDice -= 1;   
-        const x=Math.ceil(Math.random()* sides);
+        const x = Math.ceil(Math.random()* sides);
         resultString += ' '+ x + ' ';
         resultNumber += x;
     }
