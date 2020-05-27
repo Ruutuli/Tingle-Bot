@@ -1,0 +1,45 @@
+Roll,Temp,Wind,Percipitation,Chance
+1,Very Cold,Storming,Blizzard,1%
+2,Very Cold,Very Windy,Heavy Snow,1%
+3,Very Cold,Very Windy,Light Snow,1%
+4 5,Very Cold,Very Windy,Cloudy  ,2%
+6 7,Very Cold,Very Windy,Sunny  ,2%
+8 9,Very Cold,Windy,Heavy Snow,2%
+10 11,Very Cold,Windy,Light Snow,2%
+12 13,Cold,Windy,Cloudy  ,2%
+14 15,Cold,Windy,Sunny  ,2%
+16 17,Cold,Light Wind,Light Snow,2%
+18 19 20,Cold,Light Wind,Cloudy  ,3%
+21 22 23,Cold,Light Wind,Sunny  ,3%
+24 25,Cold,Very Windy,Heavy Snow,2%
+26 27,Cold,Very Windy,Light Snow,2%
+28 29 30 31,Cold,Very Windy,Cloudy  ,4%
+32 33 34 35,Cold,Very Windy,Sunny  ,4%
+36,Cold,Very Windy,Large Hail,1%
+37,Cold,Very Windy,Small Hail,1%
+38 39,Cold,Storming,Thundersnow,2%
+40 41,Cold,Windy,Heavy Snow,2%
+42 43,Cold,Windy,Light Snow,2%
+44 45 46 47,Brisk,Windy,Cloudy  ,4%
+48 49 50 51,Brisk,Windy,Sunny  ,4%
+52,Brisk,Windy,Small Hail,1%
+53 54 55,Brisk,Light Wind,Light Snow,3%
+56 57 58 59,Brisk,Light Wind,Cloudy  ,4%
+60 61 62 63,Brisk,Light Wind,Sunny  ,4%
+64,Brisk,Light Wind,Small Hail,1%
+65 66,Brisk,Storming,Thunderstorm,2%
+67 68,Brisk,Very Windy,Light Snow,2%
+69 70 71,Brisk,Very Windy,Cloudy  ,3%
+72 73 74,Brisk,Very Windy,Sunny  ,3%
+75,Brisk,Very Windy,Large Hail,1%
+76,Brisk,Very Windy,Small Hail,1%
+77,Brisk,Very Windy,Heavy Rain,1%
+78 79,Brisk,Windy,Light Snow,2%
+80 81 82,Mild,Windy,Cloudy  ,3%
+83 84 85,Mild,Windy,Sunny  ,3%
+86,Mild,Storming,Small Hail,1%
+87 88,Mild,Windy,Heavy Rain,2%
+89 90,Mild,Light Wind,Light Rain,2%
+91 92,Mild,Light Wind,Sunny  ,2%
+93 94 95 96,Mild,Light Wind,Cloudy  ,4%
+97 98 99 100,Warm,Light Wind,Sunny  ,4%
