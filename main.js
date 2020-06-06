@@ -1,13 +1,3 @@
-// function butts(ok) {
-//     const x=Math.floor(Math.random() * ok);
-//     return x;
-// }
-// console.log(butts(45));
-// console.log(butts(45));
-// console.log(butts(45));
-// console.log(butts(45));
-// module.exports={butts}
-
 function diceRoller(diceString) {
     const diceArray = diceString.split('d');
     if (diceArray.length !==2) {
@@ -27,18 +17,21 @@ function diceRoller(diceString) {
     numberOfDice = Number(numberOfDice);
     sides = Number(sides);
     
-    let resultString = '`'
+    let resultString = `\` ${diceString} =`
 
     let resultNumber = 0
 
     while (numberOfDice > 0) {
         numberOfDice -= 1;   
         const x = Math.ceil(Math.random()* sides);
-        resultString += ' '+ x + ' ';
+        resultString += ' ('+ x + ') ';
+        if (numberOfDice > 0){
+            resultString += '+'
+        } 
         resultNumber += x;
     }
 
-    resultString = resultString + ' ==> ' + resultNumber +'`';
+    resultString = resultString + '= ' + resultNumber +'`';
 
    // return {sides, numberOfDice};
    return resultString;    
