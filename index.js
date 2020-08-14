@@ -11,7 +11,7 @@ const client = new Discord.Client();
 client.login(token);
 
 client.once('ready', () => {
-  scheduler.scheduleJob('* 13 18 * * *', function() {
+  scheduler.scheduleJob('0 0 9 * * *', function() {
     
 
     client.channels.cache.get(rudania).send(new Discord.MessageEmbed()
