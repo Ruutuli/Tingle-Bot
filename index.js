@@ -1,14 +1,24 @@
 const Discord = require('discord.js');
+const scheduler = require('node-schedule');
+
 const { prefix, token } = require('./config.json');
 
 const main = require('./utils/main');
 const { fetchWeather } = require('./utils/weather');
+const { getSeason } = require('./utils/season');
 
 const client = new Discord.Client();
 client.login(token);
 
 client.once('ready', () => {
-    console.log('Ready!')
+  scheduler.scheduleJob('0 0 9 * * *', function() {
+    console.log({
+      Inariko: fetchWeather('inariko', getSeason()),
+      Rudania: fetchWeather('rudania', getSeason()),
+      Vhintl: fetchWeather('vhintl', getSeason()),
+    });
+  });
+  console.log('Ready!')
 })
 
 client.on('message', message => {
