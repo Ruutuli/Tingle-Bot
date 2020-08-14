@@ -23,7 +23,7 @@ function fetchWeather(location, season) {
   if (!weatherObj) {
     return `No weather could be found for ${location} and ${season}`;
   }
-  return `\n Temperature: ${weatherObj.temp} \n wind: ${weatherObj.wind} \n Percipitation: ${weatherObj.percipitation}`
+  return `\n Temperature: ${weatherObj.temp} \n wind: ${weatherObj.wind} \n Precipitation: ${weatherObj.precipitation}`
 }
 
 module.exports = { fetchWeather }

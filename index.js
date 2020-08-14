@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const scheduler = require('node-schedule');
 
-const { prefix, token } = require('./config.json');
+const { prefix, token, rudania, inariko, vhintl } = require('./config.json');
 
 const main = require('./utils/main');
 const { fetchWeather } = require('./utils/weather');
@@ -11,12 +11,24 @@ const client = new Discord.Client();
 client.login(token);
 
 client.once('ready', () => {
-  scheduler.scheduleJob('0 0 9 * * *', function() {
-    console.log({
-      Inariko: fetchWeather('inariko', getSeason()),
-      Rudania: fetchWeather('rudania', getSeason()),
-      Vhintl: fetchWeather('vhintl', getSeason()),
-    });
+  scheduler.scheduleJob('* 13 18 * * *', function() {
+    
+
+    client.channels.cache.get(rudania).send(new Discord.MessageEmbed()
+      .setColor('#0099ff')
+      .setTitle('Daily Weather Forecast')
+      .setDescription(fetchWeather('rudania', getSeason()))
+    );
+    client.channels.cache.get(inariko).send(new Discord.MessageEmbed()
+      .setColor('#0099ff')
+      .setTitle('Daily Weather Forecast')
+      .setDescription(fetchWeather('inariko', getSeason()))
+    );
+    client.channels.cache.get(vhintl).send(new Discord.MessageEmbed()
+      .setColor('#0099ff')
+      .setTitle('Daily Weather Forecast')
+      .setDescription(fetchWeather('vhintl', getSeason()))
+    );
   });
   console.log('Ready!')
 })

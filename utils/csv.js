@@ -12,7 +12,7 @@ fs.createReadStream(path.join(__dirname, '..', 'resources', 'vhintl2.csv'))
     // obj[roll] = {
     //   temp: row.Temp,
     //   wind: row.Wind,
-    //   percipitation: row.Percipitation,
+    //   precipitation: row.Precipitation,
     //   description: row.DESCRIPTION,
     //   emoji: row.EMOJI
     // }
