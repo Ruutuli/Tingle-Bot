@@ -665,6 +665,228 @@
         "wind": "Light Wind",
         "percipitation": "Sunny  "
       }
+    },
+    "summer": {
+      "1": {
+        "temp": "Very Cold",
+        "wind": "Storming",
+        "percipitation": "Blizzard"
+      },
+      "2": {
+        "temp": "Very Cold",
+        "wind": "Very Windy",
+        "percipitation": "Heavy Snow"
+      },
+      "3": {
+        "temp": "Very Cold",
+        "wind": "Very Windy",
+        "percipitation": "Light Snow"
+      },
+      "5": {
+        "temp": "Very Cold",
+        "wind": "Very Windy",
+        "percipitation": "Cloudy  "
+      },
+      "7": {
+        "temp": "Very Cold",
+        "wind": "Very Windy",
+        "percipitation": "Sunny  "
+      },
+      "9": {
+        "temp": "Very Cold",
+        "wind": "Windy",
+        "percipitation": "Heavy Snow"
+      },
+      "11": {
+        "temp": "Very Cold",
+        "wind": "Windy",
+        "percipitation": "Light Snow"
+      },
+      "13": {
+        "temp": "Cold",
+        "wind": "Windy",
+        "percipitation": "Cloudy  "
+      },
+      "15": {
+        "temp": "Cold",
+        "wind": "Windy",
+        "percipitation": "Sunny  "
+      },
+      "17": {
+        "temp": "Cold",
+        "wind": "Light Wind",
+        "percipitation": "Light Snow"
+      },
+      "20": {
+        "temp": "Cold",
+        "wind": "Light Wind",
+        "percipitation": "Cloudy  "
+      },
+      "23": {
+        "temp": "Cold",
+        "wind": "Light Wind",
+        "percipitation": "Sunny  "
+      },
+      "25": {
+        "temp": "Cold",
+        "wind": "Very Windy",
+        "percipitation": "Heavy Snow"
+      },
+      "27": {
+        "temp": "Cold",
+        "wind": "Very Windy",
+        "percipitation": "Light Snow"
+      },
+      "31": {
+        "temp": "Cold",
+        "wind": "Very Windy",
+        "percipitation": "Cloudy  "
+      },
+      "35": {
+        "temp": "Cold",
+        "wind": "Very Windy",
+        "percipitation": "Sunny  "
+      },
+      "36": {
+        "temp": "Cold",
+        "wind": "Very Windy",
+        "percipitation": "Large Hail"
+      },
+      "37": {
+        "temp": "Cold",
+        "wind": "Very Windy",
+        "percipitation": "Small Hail"
+      },
+      "39": {
+        "temp": "Cold",
+        "wind": "Storming",
+        "percipitation": "Thundersnow"
+      },
+      "41": {
+        "temp": "Cold",
+        "wind": "Windy",
+        "percipitation": "Heavy Snow"
+      },
+      "43": {
+        "temp": "Cold",
+        "wind": "Windy",
+        "percipitation": "Light Snow"
+      },
+      "47": {
+        "temp": "Brisk",
+        "wind": "Windy",
+        "percipitation": "Cloudy  "
+      },
+      "51": {
+        "temp": "Brisk",
+        "wind": "Windy",
+        "percipitation": "Sunny  "
+      },
+      "52": {
+        "temp": "Brisk",
+        "wind": "Windy",
+        "percipitation": "Small Hail"
+      },
+      "55": {
+        "temp": "Brisk",
+        "wind": "Light Wind",
+        "percipitation": "Light Snow"
+      },
+      "59": {
+        "temp": "Brisk",
+        "wind": "Light Wind",
+        "percipitation": "Cloudy  "
+      },
+      "63": {
+        "temp": "Brisk",
+        "wind": "Light Wind",
+        "percipitation": "Sunny  "
+      },
+      "64": {
+        "temp": "Brisk",
+        "wind": "Light Wind",
+        "percipitation": "Small Hail"
+      },
+      "66": {
+        "temp": "Brisk",
+        "wind": "Storming",
+        "percipitation": "Thunderstorm"
+      },
+      "68": {
+        "temp": "Brisk",
+        "wind": "Very Windy",
+        "percipitation": "Light Snow"
+      },
+      "71": {
+        "temp": "Brisk",
+        "wind": "Very Windy",
+        "percipitation": "Cloudy  "
+      },
+      "74": {
+        "temp": "Brisk",
+        "wind": "Very Windy",
+        "percipitation": "Sunny  "
+      },
+      "75": {
+        "temp": "Brisk",
+        "wind": "Very Windy",
+        "percipitation": "Large Hail"
+      },
+      "76": {
+        "temp": "Brisk",
+        "wind": "Very Windy",
+        "percipitation": "Small Hail"
+      },
+      "77": {
+        "temp": "Brisk",
+        "wind": "Very Windy",
+        "percipitation": "Heavy Rain"
+      },
+      "79": {
+        "temp": "Brisk",
+        "wind": "Windy",
+        "percipitation": "Light Snow"
+      },
+      "82": {
+        "temp": "Mild",
+        "wind": "Windy",
+        "percipitation": "Cloudy  "
+      },
+      "85": {
+        "temp": "Mild",
+        "wind": "Windy",
+        "percipitation": "Sunny  "
+      },
+      "86": {
+        "temp": "Mild",
+        "wind": "Storming",
+        "percipitation": "Small Hail"
+      },
+      "88": {
+        "temp": "Mild",
+        "wind": "Windy",
+        "percipitation": "Heavy Rain"
+      },
+      "90": {
+        "temp": "Mild",
+        "wind": "Light Wind",
+        "percipitation": "Light Rain"
+      },
+      "92": {
+        "temp": "Mild",
+        "wind": "Light Wind",
+        "percipitation": "Sunny  "
+      },
+      "96": {
+        "temp": "Mild",
+        "wind": "Light Wind",
+        "percipitation": "Cloudy  "
+      },
+      "100": {
+        "temp": "Warm",
+        "wind": "Light Wind",
+        "percipitation": "Sunny  "
+      }
     }
   },
   "rudania": {
@@ -1471,6 +1693,281 @@
         "description": "",
         "emoji": ""
       }
+    },
+    "summer": {
+      "1": {
+        "temp": "Brisk",
+        "wind": "Very Windy",
+        "percipitation": "Light Rain",
+        "description": "",
+        "emoji": ""
+      },
+      "2": {
+        "temp": "Brisk",
+        "wind": "Very Windy",
+        "percipitation": "Cloudy  ",
+        "description": "",
+        "emoji": ""
+      },
+      "4": {
+        "temp": "Brisk",
+        "wind": "Very Windy",
+        "percipitation": "Sunny  ",
+        "description": "",
+        "emoji": ""
+      },
+      "5": {
+        "temp": "Brisk",
+        "wind": "Windy",
+        "percipitation": "Light Rain",
+        "description": "",
+        "emoji": ""
+      },
+      "6": {
+        "temp": "Brisk",
+        "wind": "Windy",
+        "percipitation": "Cloudy  ",
+        "description": "",
+        "emoji": ""
+      },
+      "8": {
+        "temp": "Brisk",
+        "wind": "Windy",
+        "percipitation": "Sunny  ",
+        "description": "",
+        "emoji": ""
+      },
+      "9": {
+        "temp": "Brisk",
+        "wind": "Light Wind",
+        "percipitation": "Light Rain",
+        "description": "",
+        "emoji": ""
+      },
+      "10": {
+        "temp": "Brisk",
+        "wind": "Light Wind",
+        "percipitation": "Cloudy  ",
+        "description": "",
+        "emoji": ""
+      },
+      "12": {
+        "temp": "Brisk",
+        "wind": "Light Wind",
+        "percipitation": "Sunny  ",
+        "description": "",
+        "emoji": ""
+      },
+      "13": {
+        "temp": "Mild (60s F)",
+        "wind": "Very Windy",
+        "percipitation": "Light Rain",
+        "description": "",
+        "emoji": ""
+      },
+      "16": {
+        "temp": "Mild (60s F)",
+        "wind": "Very Windy",
+        "percipitation": "Cloudy  ",
+        "description": "",
+        "emoji": ""
+      },
+      "17": {
+        "temp": "Mild (60s F)",
+        "wind": "Storming",
+        "percipitation": "Dry Thunder",
+        "description": "",
+        "emoji": ""
+      },
+      "22": {
+        "temp": "Mild (60s F)",
+        "wind": "Very Windy",
+        "percipitation": "Sunny  ",
+        "description": "",
+        "emoji": ""
+      },
+      "23": {
+        "temp": "Mild (60s F)",
+        "wind": "Windy",
+        "percipitation": "Light Rain",
+        "description": "",
+        "emoji": ""
+      },
+      "28": {
+        "temp": "Mild (60s F)",
+        "wind": "Windy",
+        "percipitation": "Cloudy  ",
+        "description": "",
+        "emoji": ""
+      },
+      "33": {
+        "temp": "Mild (60s F)",
+        "wind": "Windy",
+        "percipitation": "Sunny  ",
+        "description": "",
+        "emoji": ""
+      },
+      "34": {
+        "temp": "Mild (60s F)",
+        "wind": "Light Wind",
+        "percipitation": "Light Rain",
+        "description": "",
+        "emoji": ""
+      },
+      "39": {
+        "temp": "Mild (60s F)",
+        "wind": "Light Wind",
+        "percipitation": "Cloudy  ",
+        "description": "",
+        "emoji": ""
+      },
+      "44": {
+        "temp": "Mild (60s F)",
+        "wind": "Light Wind",
+        "percipitation": "Sunny  ",
+        "description": "",
+        "emoji": ""
+      },
+      "45": {
+        "temp": "Normal (70s F)",
+        "wind": "Very Windy",
+        "percipitation": "Light Rain",
+        "description": "",
+        "emoji": ""
+      },
+      "48": {
+        "temp": "Normal (70s F)",
+        "wind": "Very Windy",
+        "percipitation": "Cloudy  ",
+        "description": "",
+        "emoji": ""
+      },
+      "50": {
+        "temp": "Normal (70s F)",
+        "wind": "Storming",
+        "percipitation": "Dry Thunder",
+        "description": "",
+        "emoji": ""
+      },
+      "54": {
+        "temp": "Normal (70s F)",
+        "wind": "Very Windy",
+        "percipitation": "Sunny  ",
+        "description": "",
+        "emoji": ""
+      },
+      "55": {
+        "temp": "Normal (70s F)",
+        "wind": "Windy",
+        "percipitation": "Light Rain",
+        "description": "",
+        "emoji": ""
+      },
+      "60": {
+        "temp": "Normal (70s F)",
+        "wind": "Windy",
+        "percipitation": "Cloudy  ",
+        "description": "",
+        "emoji": ""
+      },
+      "65": {
+        "temp": "Normal (70s F)",
+        "wind": "Windy",
+        "percipitation": "Sunny  ",
+        "description": "",
+        "emoji": ""
+      },
+      "66": {
+        "temp": "Normal (70s F)",
+        "wind": "Light Wind",
+        "percipitation": "Light Rain",
+        "description": "",
+        "emoji": ""
+      },
+      "71": {
+        "temp": "Normal (70s F)",
+        "wind": "Light Wind",
+        "percipitation": "Cloudy  ",
+        "description": "",
+        "emoji": ""
+      },
+      "76": {
+        "temp": "Normal (70s F)",
+        "wind": "Light Wind",
+        "percipitation": "Sunny  ",
+        "description": "",
+        "emoji": ""
+      },
+      "77": {
+        "temp": "Warm (80s F)",
+        "wind": "Very Windy",
+        "percipitation": "Light Rain",
+        "description": "",
+        "emoji": ""
+      },
+      "80": {
+        "temp": "Warm (80s F)",
+        "wind": "Very Windy",
+        "percipitation": "Cloudy  ",
+        "description": "",
+        "emoji": ""
+      },
+      "83": {
+        "temp": "Warm (80s F)",
+        "wind": "Very Windy",
+        "percipitation": "Sunny  ",
+        "description": "",
+        "emoji": ""
+      },
+      "84": {
+        "temp": "Warm (80s F)",
+        "wind": "Storming",
+        "percipitation": "Cinder Storm",
+        "description": "",
+        "emoji": ""
+      },
+      "85": {
+        "temp": "Warm (80s F)",
+        "wind": "Windy",
+        "percipitation": "Light Rain",
+        "description": "",
+        "emoji": ""
+      },
+      "88": {
+        "temp": "Warm (80s F)",
+        "wind": "Windy",
+        "percipitation": "Cloudy  ",
+        "description": "",
+        "emoji": ""
+      },
+      "92": {
+        "temp": "Warm (80s F)",
+        "wind": "Windy",
+        "percipitation": "Sunny  ",
+        "description": "",
+        "emoji": ""
+      },
+      "93": {
+        "temp": "Warm (80s F)",
+        "wind": "Light Wind",
+        "percipitation": "Light Rain",
+        "description": "",
+        "emoji": ""
+      },
+      "96": {
+        "temp": "Warm (80s F)",
+        "wind": "Light Wind",
+        "percipitation": "Cloudy  ",
+        "description": "",
+        "emoji": ""
+      },
+      "100": {
+        "temp": "Warm (80s F)",
+        "wind": "Light Wind",
+        "percipitation": "Sunny  ",
+        "description": "",
+        "emoji": ""
+      }
     }
   },
   "vhintl": {
@@ -1834,6 +2331,203 @@
       }
     },
     "spring": {
+      "1": {
+        "temp": "Cold",
+        "wind": "Storming",
+        "percipitation": "Thunderstorm"
+      },
+      "2": {
+        "temp": "Cold",
+        "wind": "Very Windy",
+        "percipitation": "Heavy Rain"
+      },
+      "4": {
+        "temp": "Cold",
+        "wind": "Very Windy",
+        "percipitation": "Light Rain"
+      },
+      "6": {
+        "temp": "Cold",
+        "wind": "Very Windy",
+        "percipitation": "Cloudy  "
+      },
+      "8": {
+        "temp": "Cold",
+        "wind": "Very Windy",
+        "percipitation": "Sunny  "
+      },
+      "10": {
+        "temp": "Cold",
+        "wind": "Windy",
+        "percipitation": "Heavy Rain"
+      },
+      "12": {
+        "temp": "Cold",
+        "wind": "Windy",
+        "percipitation": "Light Rain"
+      },
+      "15": {
+        "temp": "Cold",
+        "wind": "Windy",
+        "percipitation": "Cloudy  "
+      },
+      "18": {
+        "temp": "Cold",
+        "wind": "Windy",
+        "percipitation": "Sunny  "
+      },
+      "22": {
+        "temp": "Cold",
+        "wind": "Light Wind",
+        "percipitation": "Light Rain"
+      },
+      "26": {
+        "temp": "Cold",
+        "wind": "Light Wind",
+        "percipitation": "Cloudy  "
+      },
+      "30": {
+        "temp": "Cold",
+        "wind": "Light Wind",
+        "percipitation": "Sunny  "
+      },
+      "32": {
+        "temp": "Brisk",
+        "wind": "Very Windy",
+        "percipitation": "Heavy Rain"
+      },
+      "34": {
+        "temp": "Brisk",
+        "wind": "Very Windy",
+        "percipitation": "Light Rain"
+      },
+      "36": {
+        "temp": "Brisk",
+        "wind": "Very Windy",
+        "percipitation": "Cloudy  "
+      },
+      "38": {
+        "temp": "Brisk",
+        "wind": "Very Windy",
+        "percipitation": "Sunny  "
+      },
+      "40": {
+        "temp": "Brisk",
+        "wind": "Storming",
+        "percipitation": "Thunderstorm"
+      },
+      "43": {
+        "temp": "Brisk",
+        "wind": "Windy",
+        "percipitation": "Heavy Rain"
+      },
+      "46": {
+        "temp": "Brisk",
+        "wind": "Windy",
+        "percipitation": "Light Rain"
+      },
+      "49": {
+        "temp": "Brisk",
+        "wind": "Windy",
+        "percipitation": "Cloudy  "
+      },
+      "53": {
+        "temp": "Brisk",
+        "wind": "Windy",
+        "percipitation": "Sunny  "
+      },
+      "57": {
+        "temp": "Brisk",
+        "wind": "Light Wind",
+        "percipitation": "Light Rain"
+      },
+      "61": {
+        "temp": "Brisk",
+        "wind": "Light Wind",
+        "percipitation": "Cloudy  "
+      },
+      "66": {
+        "temp": "Brisk",
+        "wind": "Light Wind",
+        "percipitation": "Sunny  "
+      },
+      "69": {
+        "temp": "Mild",
+        "wind": "Storming",
+        "percipitation": "Thunderstorm"
+      },
+      "70": {
+        "temp": "Mild",
+        "wind": "Very Windy",
+        "percipitation": "Light Rain"
+      },
+      "72": {
+        "temp": "Mild",
+        "wind": "Very Windy",
+        "percipitation": "Cloudy  "
+      },
+      "74": {
+        "temp": "Mild",
+        "wind": "Very Windy",
+        "percipitation": "Sunny  "
+      },
+      "75": {
+        "temp": "Mild",
+        "wind": "Very Windy",
+        "percipitation": "Large Hail"
+      },
+      "76": {
+        "temp": "Mild",
+        "wind": "Very Windy",
+        "percipitation": "Small Hail"
+      },
+      "77": {
+        "temp": "Mild",
+        "wind": "Very Windy",
+        "percipitation": "Heavy Rain"
+      },
+      "79": {
+        "temp": "Mild",
+        "wind": "Windy",
+        "percipitation": "Light Rain"
+      },
+      "81": {
+        "temp": "Mild",
+        "wind": "Windy",
+        "percipitation": "Cloudy  "
+      },
+      "83": {
+        "temp": "Mild",
+        "wind": "Windy",
+        "percipitation": "Sunny  "
+      },
+      "85": {
+        "temp": "Mild",
+        "wind": "Windy",
+        "percipitation": "Small Hail"
+      },
+      "87": {
+        "temp": "Mild",
+        "wind": "Windy",
+        "percipitation": "Heavy Rain"
+      },
+      "90": {
+        "temp": "Mild",
+        "wind": "Light Wind",
+        "percipitation": "Light Rain"
+      },
+      "95": {
+        "temp": "Mild",
+        "wind": "Light Wind",
+        "percipitation": "Cloudy  "
+      },
+      "100": {
+        "temp": "Mild",
+        "wind": "Light Wind",
+        "percipitation": "Sunny  "
+      }
+    },
+    "summer": {
       "1": {
         "temp": "Cold",
         "wind": "Storming",
