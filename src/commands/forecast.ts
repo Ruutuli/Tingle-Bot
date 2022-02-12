@@ -23,20 +23,7 @@ export const forecast: Command = {
     await interaction.deferReply();
     const region = interaction.options.getString("region", true) as RegionName;
     const forecast = CACHE[region] || getWeatherForecast(region);
-    console.log(forecast);
-    const embed = generateWeatherEmbed(forecast);
-    if (forecast) {
-      const seasonIcon = getSeasonIcon(forecast.season);
-      embed.setThumbnail(seasonIcon.attachmentString);
-      const banner = await generateBanner(forecast);
-      embed.setImage(banner.attachmentString);
-      await interaction.editReply({
-        embeds: [embed],
-        files: [seasonIcon.filePath, banner.filePath],
-      });
-      return;
-    }
-
-    await interaction.editReply({ embeds: [embed] });
+    const response = await generateWeatherEmbed(forecast);
+    await interaction.editReply(response);
   },
 };

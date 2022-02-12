@@ -1,6 +1,9 @@
-import { MessageEmbed } from "discord.js";
+import { MessageEmbed, MessagePayload } from "discord.js";
 
 import { WeatherForecast } from "../interfaces/weather/WeatherForecast";
+
+import { generateBanner } from "./images/generateBanner";
+import { getSeasonIcon } from "./images/getSeasonIcon";
 
 /**
  * Parses a weather forecast into a Discord message embed.
@@ -8,13 +11,14 @@ import { WeatherForecast } from "../interfaces/weather/WeatherForecast";
  * @param {WeatherForecast} forecast The forecast to parse.
  * @returns {MessageEmbed} A Discord message embed.
  */
-export const generateWeatherEmbed = (
+export const generateWeatherEmbed = async (
   forecast: WeatherForecast | null
-): MessageEmbed => {
+): Promise<MessagePayload["options"]> => {
   if (!forecast) {
-    return new MessageEmbed()
+    const embed = new MessageEmbed()
       .setTitle("Error")
       .setDescription("No forecast was generated.");
+    return { embeds: [embed] };
   }
 
   const weatherEmbed = new MessageEmbed();
@@ -39,9 +43,27 @@ export const generateWeatherEmbed = (
     weatherEmbed.addField("Description", `${forecast.special.description}`);
     emoteString += forecast.special.emote;
   }
-  // TODO: Add season icon and banner image
-
   weatherEmbed.setDescription(emoteString);
 
-  return weatherEmbed;
+  const seasonIcon = getSeasonIcon(forecast.season);
+  weatherEmbed.setThumbnail(seasonIcon.attachmentString);
+  const banner = await generateBanner(forecast);
+  weatherEmbed.setImage(banner.attachmentString);
+
+  switch (forecast.region) {
+    case "Rudania":
+      weatherEmbed.setColor("RED");
+      break;
+    case "Inariko":
+      weatherEmbed.setColor("BLUE");
+      break;
+    case "Vhintl":
+      weatherEmbed.setColor("GREEN");
+      break;
+  }
+
+  return {
+    embeds: [weatherEmbed],
+    files: [seasonIcon.filePath, banner.filePath],
+  };
 };
