@@ -3,14 +3,17 @@ import { Routes } from "discord-api-types/v9";
 import { Client } from "discord.js";
 
 import { CommandList } from "../../commands/_CommandList";
+import { WeatherCache } from "../../interfaces/WeatherCache";
+import { scheduleForecasts } from "../../modules/scheduleForecasts";
 
 /**
  * Handler for the READY event from Discord. Logs that the bot is connected,
  * then registers the guild slash commands.
  *
  * @param {Client} BOT The bot's Discord instance.
+ * @param {WeatherCache} CACHE The cache of weather data.
  */
-export const onReady = async (BOT: Client) => {
+export const onReady = async (BOT: Client, CACHE: WeatherCache) => {
   console.log("Connected to Discord!");
 
   const rest = new REST({ version: "9" }).setToken(
@@ -28,4 +31,6 @@ export const onReady = async (BOT: Client) => {
   );
 
   console.log("Registered Commands!");
+
+  scheduleForecasts(CACHE);
 };

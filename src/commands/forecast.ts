@@ -5,8 +5,6 @@ import { Command } from "../interfaces/commands/Command";
 import { RegionName } from "../interfaces/weather/names/RegionName";
 import { generateWeatherEmbed } from "../modules/generateWeatherEmbed";
 import { getWeatherForecast } from "../modules/getWeatherForecast";
-import { generateBanner } from "../modules/images/generateBanner";
-import { getSeasonIcon } from "../modules/images/getSeasonIcon";
 
 export const forecast: Command = {
   data: new SlashCommandBuilder()

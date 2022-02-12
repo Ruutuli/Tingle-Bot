@@ -12,7 +12,7 @@ import { onReady } from "./handlers/onReady";
  * @param { WeatherCache } CACHE The cache of weather data.
  */
 export const handleEvents = (BOT: Client, CACHE: WeatherCache) => {
-  BOT.on("ready", async () => await onReady(BOT));
+  BOT.on("ready", async () => await onReady(BOT, CACHE));
 
   BOT.on(
     "interactionCreate",

@@ -4,6 +4,7 @@ import { IntentOptions } from "./config/IntentOptions";
 import { handleEvents } from "./events/handleEvents";
 import { WeatherCache } from "./interfaces/WeatherCache";
 import { getWeatherForecast } from "./modules/getWeatherForecast";
+import { loadChannels } from "./modules/loadChannels";
 
 (async () => {
   const BOT = new Client({ intents: IntentOptions });
@@ -12,6 +13,7 @@ import { getWeatherForecast } from "./modules/getWeatherForecast";
     Rudania: getWeatherForecast("Rudania"),
     Inariko: getWeatherForecast("Inariko"),
     Vhintl: getWeatherForecast("Vhintl"),
+    channels: await loadChannels(BOT),
   };
 
   handleEvents(BOT, CACHE);
