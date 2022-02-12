@@ -19,10 +19,11 @@ export const forecast: Command = {
         .setRequired(true)
         .addChoices(ForecastChoices)
     ),
-  run: async (interaction) => {
+  run: async (interaction, CACHE) => {
     await interaction.deferReply();
     const region = interaction.options.getString("region", true) as RegionName;
-    const forecast = getWeatherForecast(region);
+    const forecast = CACHE[region] || getWeatherForecast(region);
+    console.log(forecast);
     const embed = generateWeatherEmbed(forecast);
     if (forecast) {
       const seasonIcon = getSeasonIcon(forecast.season);
