@@ -5,6 +5,7 @@ import { Command } from "../interfaces/commands/Command";
 import { RegionName } from "../interfaces/weather/names/RegionName";
 import { generateWeatherEmbed } from "../modules/generateWeatherEmbed";
 import { getWeatherForecast } from "../modules/getWeatherForecast";
+import { generateBanner } from "../modules/images/generateBanner";
 import { getSeasonIcon } from "../modules/images/getSeasonIcon";
 
 export const forecast: Command = {
@@ -25,10 +26,13 @@ export const forecast: Command = {
     const embed = generateWeatherEmbed(forecast);
     if (forecast) {
       const seasonIcon = getSeasonIcon(forecast.season);
-      embed.setThumbnail(
-        "attachment://" + forecast.season.toLowerCase() + ".png"
-      );
-      await interaction.editReply({ embeds: [embed], files: [seasonIcon] });
+      embed.setThumbnail(seasonIcon.attachmentString);
+      const banner = await generateBanner(forecast);
+      embed.setImage(banner.attachmentString);
+      await interaction.editReply({
+        embeds: [embed],
+        files: [seasonIcon.filePath, banner.filePath],
+      });
       return;
     }
 
