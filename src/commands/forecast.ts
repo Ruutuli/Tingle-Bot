@@ -5,6 +5,7 @@ import { Command } from "../interfaces/commands/Command";
 import { RegionName } from "../interfaces/weather/names/RegionName";
 import { generateWeatherEmbed } from "../modules/generateWeatherEmbed";
 import { getWeatherForecast } from "../modules/getWeatherForecast";
+import { errorHandler } from "../utils/errorHandler";
 
 export const forecast: Command = {
   data: new SlashCommandBuilder()
@@ -18,10 +19,18 @@ export const forecast: Command = {
         .addChoices(ForecastChoices)
     ),
   run: async (interaction, CACHE) => {
-    await interaction.deferReply();
-    const region = interaction.options.getString("region", true) as RegionName;
-    const forecast = CACHE[region] || getWeatherForecast(region);
-    const response = await generateWeatherEmbed(forecast);
-    await interaction.editReply(response);
+    try {
+      await interaction.deferReply();
+      const region = interaction.options.getString(
+        "region",
+        true
+      ) as RegionName;
+      const forecast = CACHE[region] || getWeatherForecast(region);
+      const response = await generateWeatherEmbed(forecast);
+      await interaction.editReply(response);
+    } catch (err) {
+      const response = await errorHandler(err, "forecast command");
+      await interaction.editReply(response);
+    }
   },
 };

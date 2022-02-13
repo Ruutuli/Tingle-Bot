@@ -23,7 +23,7 @@ export const onInteraction = async (
   );
 
   if (!target) {
-    console.error("This should never happen, but a bad command was received!");
+    await interaction.reply(`Command ${interaction.commandName} not found.`);
     return;
   }
 

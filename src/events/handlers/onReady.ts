@@ -1,10 +1,11 @@
 import { REST } from "@discordjs/rest";
 import { Routes } from "discord-api-types/v9";
-import { Client } from "discord.js";
+import { Client, WebhookClient } from "discord.js";
 
 import { CommandList } from "../../commands/_CommandList";
 import { WeatherCache } from "../../interfaces/WeatherCache";
 import { scheduleForecasts } from "../../modules/scheduleForecasts";
+import { logHandler } from "../../utils/logHandler";
 
 /**
  * Handler for the READY event from Discord. Logs that the bot is connected,
@@ -14,7 +15,10 @@ import { scheduleForecasts } from "../../modules/scheduleForecasts";
  * @param {WeatherCache} CACHE The cache of weather data.
  */
 export const onReady = async (BOT: Client, CACHE: WeatherCache) => {
-  console.log("Connected to Discord!");
+  const webhook = new WebhookClient({ url: process.env.DEBUG_HOOK as string });
+
+  await webhook.send("Ruu Bot is online!");
+  logHandler.log("info", "Connected to Discord!");
 
   const rest = new REST({ version: "9" }).setToken(
     process.env.DISCORD_TOKEN as string
@@ -30,7 +34,7 @@ export const onReady = async (BOT: Client, CACHE: WeatherCache) => {
     { body: commandData }
   );
 
-  console.log("Registered Commands!");
+  logHandler.log("info", "Registered commands!");
 
   scheduleForecasts(CACHE);
 };

@@ -2,6 +2,7 @@ import { temperatures } from "../data/weather/temperatures";
 import { winds } from "../data/weather/winds";
 import { RegionName } from "../interfaces/weather/names/RegionName";
 import { WeatherForecast } from "../interfaces/weather/WeatherForecast";
+import { errorHandler } from "../utils/errorHandler";
 
 import { getRandomValue } from "./getRandomValue";
 import { getPrecipitation } from "./weather/getPrecipitation";
@@ -19,29 +20,34 @@ import { getSpecial } from "./weather/getSpecial";
 export const getWeatherForecast = (
   region: RegionName
 ): WeatherForecast | null => {
-  const season = getSeason();
-  const allowedWeather = getRegionRestrictions(region, season);
+  try {
+    const season = getSeason();
+    const allowedWeather = getRegionRestrictions(region, season);
 
-  if (!allowedWeather) {
+    if (!allowedWeather) {
+      return null;
+    }
+
+    const tempName = getRandomValue(allowedWeather.temps);
+    const temperature = temperatures.find((el) => el.name === tempName);
+    const windName = getRandomValue(allowedWeather.wind);
+    const wind = winds.find((el) => el.name === windName);
+
+    if (!temperature || !wind) {
+      return null;
+    }
+
+    const precipitation = getPrecipitation(allowedWeather, tempName, windName);
+    const special = getSpecial(
+      allowedWeather,
+      tempName,
+      windName,
+      precipitation?.name
+    );
+
+    return { region, season, temperature, wind, precipitation, special };
+  } catch (err) {
+    errorHandler(err, "get weather forecast");
     return null;
   }
-
-  const tempName = getRandomValue(allowedWeather.temps);
-  const temperature = temperatures.find((el) => el.name === tempName);
-  const windName = getRandomValue(allowedWeather.wind);
-  const wind = winds.find((el) => el.name === windName);
-
-  if (!temperature || !wind) {
-    return null;
-  }
-
-  const precipitation = getPrecipitation(allowedWeather, tempName, windName);
-  const special = getSpecial(
-    allowedWeather,
-    tempName,
-    windName,
-    precipitation?.name
-  );
-
-  return { region, season, temperature, wind, precipitation, special };
 };
