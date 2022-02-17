@@ -141,6 +141,12 @@ export const precipitations: Precipitation[] = [
   },
   {
     name: "Thundersnow",
+    temps: ["Chilly", "Cold", "Freezing", "Frigid"],
+    winds: "any",
+    emote: "🌨️⚡",
+  },
+  {
+    name: "Thunderstorm",
     temps: [
       "Brisk",
       "Cool",
@@ -151,12 +157,6 @@ export const precipitations: Precipitation[] = [
       "Scorching",
       "Heat Wave",
     ],
-    winds: "any",
-    emote: "🌨️⚡",
-  },
-  {
-    name: "Thunderstorm",
-    temps: "any",
     winds: "any",
     emote: "⛈️",
   },
