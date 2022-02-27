@@ -30,7 +30,7 @@ export const getWeatherForecast = (
 
     const tempName = getRandomValue(allowedWeather.temps);
     const temperature = temperatures.find((el) => el.name === tempName);
-    const windName = getRandomValue(allowedWeather.wind);
+    const windName = getRandomValue(allowedWeather.wind, "low");
     const wind = winds.find((el) => el.name === windName);
 
     if (!temperature || !wind) {
