@@ -14,13 +14,13 @@ export const getSeason = (): Season => {
   const month = date.getMonth();
   const day = date.getDate();
 
-  if (month < 3 || (month === 3 && day < 21) || (month === 12 && day > 20)) {
+  if (month < 2 || (month === 2 && day < 21) || (month === 11 && day > 20)) {
     return "Winter";
   }
-  if (month < 6 || (month === 6 && day < 21)) {
+  if (month < 5 || (month === 5 && day < 21)) {
     return "Spring";
   }
-  if (month < 9 || (month === 9 && day < 23)) {
+  if (month < 8 || (month === 8 && day < 23)) {
     return "Summer";
   }
   return "Fall";
